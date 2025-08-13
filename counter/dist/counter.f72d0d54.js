@@ -721,7 +721,8 @@ const Counter = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>{
-                                setCount(count - 1);
+                                if (count < 1) setCount(0);
+                                else setCount(count - 1);
                             },
                             children: "Decrease"
                         }, void 0, false, {
@@ -753,12 +754,12 @@ const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Counter, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 29,
+            lineNumber: 34,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 28,
+        lineNumber: 33,
         columnNumber: 9
     }, undefined);
 };
@@ -766,7 +767,7 @@ _c1 = App;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 34,
+    lineNumber: 39,
     columnNumber: 13
 }, undefined));
 var _c, _c1;

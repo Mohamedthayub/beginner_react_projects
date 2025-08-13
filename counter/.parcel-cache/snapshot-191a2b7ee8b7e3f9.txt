@@ -1,5 +1,5 @@
 3593
-70/home/thayub/developer/REACT/react-beginer-projects/counter/.gitignore1754949959055962194 0
+70/home/thayub/developer/REACT/react-beginer-projects/counter/.gitignore1755087454028814200 0
 92/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/dotenv/CHANGELOG.md1754949826291963562 0
 89/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/dotenv/README.md1754949826447963560 0
 92/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/dotenv/README-es.md1754949826367963561 0
@@ -862,7 +862,7 @@
 107/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/markdown-ansi/package.json1754949826183963563 0
 128/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/_/_object_destructuring_empty/package.json1754949829179963532 0
 87/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/fs/src1754949826675963558 1
-89/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.3a01df49.css.map1755086186880823796 0
+89/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.3a01df49.css.map1755104069595997502 0
 122/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mtest6.c1754949828167963542 0
 107/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/logger/test/Logger.test.js1754949826207963562 0
 114/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/features/customevent.js1754949828807963536 0
@@ -1220,7 +1220,7 @@
 149/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.win32-x64-msvc.node1754949828531963538 0
 131/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/runtime-service-worker/src/ServiceWorkerRuntime.js1754949826103963564 0
 131/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/runtime-service-worker/lib/ServiceWorkerRuntime.js1754949825971963565 0
-66/home/thayub/developer/REACT/react-beginer-projects/counter/app.js1755014231181658010 0
+66/home/thayub/developer/REACT/react-beginer-projects/counter/app.js1755104072051997470 0
 109/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/src/_inherits_loose.mjs1754949829631963527 0
 114/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/features/geolocation.js1754949829243963531 0
 116/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/runtime-service-worker/package.json1754949826147963563 0
@@ -1342,7 +1342,7 @@
 115/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/esm/_await_async_generator.js1754949827887963545 0
 120/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/transformer-node/lib/NodeTransformer.js1754949825967963565 0
 104/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/regions/FK.js1754949829147963532 0
-64/home/thayub/developer/REACT/react-beginer-projects/counter/dist1755086186884823796 1
+64/home/thayub/developer/REACT/react-beginer-projects/counter/dist1755104072439997465 1
 89/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/parcel/README.md1754949826399963560 0
 129/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/core/test/fixtures/invalid-distpath/package.json1754949828807963536 0
 108/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/features/video.js1754949830307963520 0
@@ -1587,7 +1587,7 @@
 126/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/_/_class_private_method_get/package.json1754949828715963537 0
 110/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/cjs/_new_arrow_check.cjs1754949827655963548 0
 126/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/features/css-overscroll-behavior.js1754949828639963537 0
-85/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.3a01df49.css1755086186876823796 0
+85/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.3a01df49.css1755104069575997502 0
 104/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/ordered-binary/rollup.config.js1754949826159963563 0
 99/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/workers/lib/bus.js1754949826139963563 0
 104/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/utils/src/DefaultMap.js1754949826655963558 0
@@ -1703,7 +1703,7 @@
 77/home/thayub/developer/REACT/react-beginer-projects/counter/package-lock.json1754949921395962582 0
 116/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/features/web-bluetooth.js1754949830331963520 0
 116/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/core/lib/TargetDescriptor.schema.js1754949828611963538 0
-84/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.f72d0d54.js1755086063984824727 0
+84/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.f72d0d54.js1755104072399997466 0
 105/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@mischnic/json-sourcemap/LICENSE1754949825875963566 0
 98/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/rust/package.json1754949826327963561 0
 91/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/picomatch/index.js1754949826019963564 0
@@ -1743,12 +1743,12 @@
 104/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/regions/MU.js1754949829871963525 0
 115/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@swc/helpers/_/_class_private_field_update1754949828699963537 1
 100/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/reporter-dev-server1754949827731963547 1
-88/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.f72d0d54.js.map1755086064068824727 0
+88/home/thayub/developer/REACT/react-beginer-projects/counter/dist/counter.f72d0d54.js.map1755104072431997465 0
 109/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/caniuse-lite/data/browserVersions.js1754949828071963543 0
 125/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/package-manager/test/fixtures/packages/peers1754949827775963546 1
 113/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/core/lib/public/PluginOptions.js1754949828439963539 0
 115/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/workers/src/core-worker.browser.js1754949826471963560 0
-75/home/thayub/developer/REACT/react-beginer-projects/counter/dist/index.html1755086063972824727 0
+75/home/thayub/developer/REACT/react-beginer-projects/counter/dist/index.html1755104069571997502 0
 88/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/lmdb/index.d.ts1754949828651963537 0
 103/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/@parcel/core/src/AssetGraph.js1754949827639963548 0
 133/home/thayub/developer/REACT/react-beginer-projects/counter/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js1754949921191962584 0

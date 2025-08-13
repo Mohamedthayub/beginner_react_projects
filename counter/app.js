@@ -15,7 +15,12 @@ const Counter = () => {
                     setCount(0)
                 }}>Reset</button>
                 <button onClick={() => {
-                    setCount(count-1)
+                 if(count < 1){
+                    setCount(0);
+                 }
+                 else{
+                    setCount(count - 1);
+                 }
                 }}>Decrease</button>
             </div>
             </div>
