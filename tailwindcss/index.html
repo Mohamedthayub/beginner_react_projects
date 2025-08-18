@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="m-20"> 
+    
+    <button id="btn" class="button bg-red-400 p-4 font-extrabold rounded-2xl">add-ball</button>
+    <main>
+        <div id="container">
+
+        </div>
+    </main>
+    <script>
+        const button = document.getElementById("btn");
+        const cont = document.querySelector("#container");
+        button.addEventListener("click",() => {
+            if(cont.classList.contains("bg-violet-500", "w-30","h-30", "rounded-full","m-10")){
+                cont.classList.remove("bg-violet-500", "w-30","h-30", "rounded-full","m-10")
+            }
+            else{
+                cont.classList.add("bg-violet-500", "w-30","h-30", "rounded-full","m-10");
+            }
+        })
+    </script>
+</body>
+</html>
