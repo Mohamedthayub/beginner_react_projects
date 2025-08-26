@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import ReactDOM from "react-dom/client";
+import { CountryCodes } from "validator/lib/isISO31661Alpha2";
 let images = [
     "https://media.architecturaldigest.com/photos/66a914f1a958d12e0cc94a8e/16:9/w_1280,c_limit/DSC_5903.jpg",
     "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -7,17 +8,30 @@ let images = [
 ]
 
 const ImageSlider = () => {
-    const genarateRandom = () => {
-        return Math.floor(Math.random() * images.length);
-    }
-    const [rand,setrand ]= useState(0);
+    const [count,setCount ]= useState(0);
     return (
         <div>
-            <img src={images[rand]}></img>
-            <button onClick={() => {
-                let result = genarateRandom();
-                setrand(result);
-            }}>Random Number</button>
+            <img src={images[count]}></img>
+            <div className="btn-container">
+                <button onClick={() => {
+                    if(count ==  images.length-1 ){
+                        setCount(images.length -1);
+                    }
+                    else{
+                        setCount(count + 1);
+                    }
+                }}>+</button>
+                <button onClick={() => {
+                    if(count < 1){
+                        setCount(0);
+                    }
+                    else{
+                        setCount(count - 1);
+                    }
+                }}>
+                    -
+                </button>
+            </div>
         </div>
     )
 }
