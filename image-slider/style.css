@@ -15,3 +15,35 @@ img{
       border-radius: 10px;
       
 }
+
+.image-slider{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+.btn-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+}
+button{
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 20px;
+
+}
+.left-btn{
+      background-color:green;
+      width: 60px;
+}
+.right-btn{
+      background-color: red;
+      margin-left: 20px;
+      width: 60px;
+
+}
+
+button:hover{
+      background: none;
+}
