@@ -8,9 +8,9 @@
 
 body{
     font-family: "DM Sans", sans-serif;
+    background-color:black;
 
 }
-
 img{
     height: 200px;
     width: 200px;
@@ -24,5 +24,20 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.image-container{
+    margin-top: 30px;
+}
+.score-board{
+    display: flex;
+    
+}
+h1{
+    margin-left: 30px;
 }
