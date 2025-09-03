@@ -160,7 +160,7 @@
       });
     }
   }
-})({"aj62f":[function(require,module,exports,__globalThis) {
+})({"e6FES":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -701,7 +701,7 @@ const Counter = ()=>{
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>{
-                                setCount(count + 1);
+                                setCount((prev)=>prev + 1);
                             },
                             children: "Increase"
                         }, void 0, false, {
@@ -722,7 +722,7 @@ const Counter = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>{
                                 if (count < 1) setCount(0);
-                                else setCount(count - 1);
+                                else setCount((prev)=>prev - 1);
                             },
                             children: "Decrease"
                         }, void 0, false, {
@@ -779,11 +779,11 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react/jsx-dev-runtime":"dVPUn"}],"jMk1U":[function(require,module,exports,__globalThis) {
+},{"react":"k2qSn","react-dom/client":"5HJnq","@parcel/transformer-js/src/esmodule-helpers.js":"igp9b","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"a6zoM","react/jsx-dev-runtime":"rVuNV"}],"k2qSn":[function(require,module,exports,__globalThis) {
 'use strict';
-module.exports = require("a569817e6ea559f6");
+module.exports = require("ede04d29009c0f32");
 
-},{"a569817e6ea559f6":"ghslp"}],"ghslp":[function(require,module,exports,__globalThis) {
+},{"ede04d29009c0f32":"6rXOK"}],"6rXOK":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * react.development.js
@@ -1201,13 +1201,13 @@ module.exports = require("a569817e6ea559f6");
         return null;
     };
     deprecatedAPIs = {
-        react_stack_bottom_frame: function(callStackForError) {
+        "react-stack-bottom-frame": function(callStackForError) {
             return callStackForError();
         }
     };
     var specialPropKeyWarningShown, didWarnAboutOldJSXRuntime;
     var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = deprecatedAPIs.react_stack_bottom_frame.bind(deprecatedAPIs, UnknownOwner)();
+    var unknownOwnerDebugStack = deprecatedAPIs["react-stack-bottom-frame"].bind(deprecatedAPIs, UnknownOwner)();
     var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
     var didWarnAboutMaps = !1, userProvidedKeyEscapeRegex = /\/+/g, reportGlobalError = "function" === typeof reportError ? reportError : function(error) {
         if ("object" === typeof window && "function" === typeof window.ErrorEvent) {
@@ -1534,11 +1534,11 @@ module.exports = require("a569817e6ea559f6");
     exports.useTransition = function() {
         return resolveDispatcher().useTransition();
     };
-    exports.version = "19.1.1";
+    exports.version = "19.1.0";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{}],"hrvwu":[function(require,module,exports,__globalThis) {
+},{}],"5HJnq":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -1552,9 +1552,9 @@ function checkDCE() {
     // a false positive.
     throw new Error('^_^');
 }
-module.exports = require("2b53550ce04dc092");
+module.exports = require("cfc42e9d57d0a45d");
 
-},{"2b53550ce04dc092":"lu7uO"}],"lu7uO":[function(require,module,exports,__globalThis) {
+},{"cfc42e9d57d0a45d":"kiHi3"}],"kiHi3":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * react-dom-client.development.js
@@ -2561,7 +2561,7 @@ module.exports = require("2b53550ce04dc092");
         error.startsWith("Error: react-stack-top-frame\n") && (error = error.slice(29));
         prevPrepareStackTrace = error.indexOf("\n");
         -1 !== prevPrepareStackTrace && (error = error.slice(prevPrepareStackTrace + 1));
-        prevPrepareStackTrace = error.indexOf("react_stack_bottom_frame");
+        prevPrepareStackTrace = error.indexOf("react-stack-bottom-frame");
         -1 !== prevPrepareStackTrace && (prevPrepareStackTrace = error.lastIndexOf("\n", prevPrepareStackTrace));
         if (-1 !== prevPrepareStackTrace) error = error.slice(0, prevPrepareStackTrace);
         else return "";
@@ -12547,7 +12547,7 @@ module.exports = require("2b53550ce04dc092");
         container[internalContainerInstanceKey] && (container._reactRootContainer ? console.error("You are calling ReactDOMClient.createRoot() on a container that was previously passed to ReactDOM.render(). This is not supported.") : console.error("You are calling ReactDOMClient.createRoot() on a container that has already been passed to createRoot() before. Instead, call root.render() on the existing root instead if you want to update it."));
     }
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-    var Scheduler = require("c31f9b99c1e288cf"), React = require("c4c4bc2113e5c77f"), ReactDOM = require("772d609564cfd8f6"), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+    var Scheduler = require("58b41f0d7931b7bf"), React = require("18f532e8b37a4078"), ReactDOM = require("8723e987a5e3f325"), assign = Object.assign, REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
     Symbol.for("react.scope");
     var REACT_ACTIVITY_TYPE = Symbol.for("react.activity");
     Symbol.for("react.legacy_hidden");
@@ -14968,7 +14968,7 @@ module.exports = require("2b53550ce04dc092");
         }
     };
     var callComponent = {
-        react_stack_bottom_frame: function(Component, props, secondArg) {
+        "react-stack-bottom-frame": function(Component, props, secondArg) {
             var wasRendering = isRendering;
             isRendering = !0;
             try {
@@ -14977,8 +14977,8 @@ module.exports = require("2b53550ce04dc092");
                 isRendering = wasRendering;
             }
         }
-    }, callComponentInDEV = callComponent.react_stack_bottom_frame.bind(callComponent), callRender = {
-        react_stack_bottom_frame: function(instance) {
+    }, callComponentInDEV = callComponent["react-stack-bottom-frame"].bind(callComponent), callRender = {
+        "react-stack-bottom-frame": function(instance) {
             var wasRendering = isRendering;
             isRendering = !0;
             try {
@@ -14987,59 +14987,59 @@ module.exports = require("2b53550ce04dc092");
                 isRendering = wasRendering;
             }
         }
-    }, callRenderInDEV = callRender.react_stack_bottom_frame.bind(callRender), callComponentDidMount = {
-        react_stack_bottom_frame: function(finishedWork, instance) {
+    }, callRenderInDEV = callRender["react-stack-bottom-frame"].bind(callRender), callComponentDidMount = {
+        "react-stack-bottom-frame": function(finishedWork, instance) {
             try {
                 instance.componentDidMount();
             } catch (error) {
                 captureCommitPhaseError(finishedWork, finishedWork.return, error);
             }
         }
-    }, callComponentDidMountInDEV = callComponentDidMount.react_stack_bottom_frame.bind(callComponentDidMount), callComponentDidUpdate = {
-        react_stack_bottom_frame: function(finishedWork, instance, prevProps, prevState, snapshot) {
+    }, callComponentDidMountInDEV = callComponentDidMount["react-stack-bottom-frame"].bind(callComponentDidMount), callComponentDidUpdate = {
+        "react-stack-bottom-frame": function(finishedWork, instance, prevProps, prevState, snapshot) {
             try {
                 instance.componentDidUpdate(prevProps, prevState, snapshot);
             } catch (error) {
                 captureCommitPhaseError(finishedWork, finishedWork.return, error);
             }
         }
-    }, callComponentDidUpdateInDEV = callComponentDidUpdate.react_stack_bottom_frame.bind(callComponentDidUpdate), callComponentDidCatch = {
-        react_stack_bottom_frame: function(instance, errorInfo) {
+    }, callComponentDidUpdateInDEV = callComponentDidUpdate["react-stack-bottom-frame"].bind(callComponentDidUpdate), callComponentDidCatch = {
+        "react-stack-bottom-frame": function(instance, errorInfo) {
             var stack = errorInfo.stack;
             instance.componentDidCatch(errorInfo.value, {
                 componentStack: null !== stack ? stack : ""
             });
         }
-    }, callComponentDidCatchInDEV = callComponentDidCatch.react_stack_bottom_frame.bind(callComponentDidCatch), callComponentWillUnmount = {
-        react_stack_bottom_frame: function(current, nearestMountedAncestor, instance) {
+    }, callComponentDidCatchInDEV = callComponentDidCatch["react-stack-bottom-frame"].bind(callComponentDidCatch), callComponentWillUnmount = {
+        "react-stack-bottom-frame": function(current, nearestMountedAncestor, instance) {
             try {
                 instance.componentWillUnmount();
             } catch (error) {
                 captureCommitPhaseError(current, nearestMountedAncestor, error);
             }
         }
-    }, callComponentWillUnmountInDEV = callComponentWillUnmount.react_stack_bottom_frame.bind(callComponentWillUnmount), callCreate = {
-        react_stack_bottom_frame: function(effect) {
+    }, callComponentWillUnmountInDEV = callComponentWillUnmount["react-stack-bottom-frame"].bind(callComponentWillUnmount), callCreate = {
+        "react-stack-bottom-frame": function(effect) {
             null != effect.resourceKind && console.error("Expected only SimpleEffects when enableUseEffectCRUDOverload is disabled, got %s", effect.resourceKind);
             var create = effect.create;
             effect = effect.inst;
             create = create();
             return effect.destroy = create;
         }
-    }, callCreateInDEV = callCreate.react_stack_bottom_frame.bind(callCreate), callDestroy = {
-        react_stack_bottom_frame: function(current, nearestMountedAncestor, destroy) {
+    }, callCreateInDEV = callCreate["react-stack-bottom-frame"].bind(callCreate), callDestroy = {
+        "react-stack-bottom-frame": function(current, nearestMountedAncestor, destroy) {
             try {
                 destroy();
             } catch (error) {
                 captureCommitPhaseError(current, nearestMountedAncestor, error);
             }
         }
-    }, callDestroyInDEV = callDestroy.react_stack_bottom_frame.bind(callDestroy), callLazyInit = {
-        react_stack_bottom_frame: function(lazy) {
+    }, callDestroyInDEV = callDestroy["react-stack-bottom-frame"].bind(callDestroy), callLazyInit = {
+        "react-stack-bottom-frame": function(lazy) {
             var init = lazy._init;
             return init(lazy._payload);
         }
-    }, callLazyInitInDEV = callLazyInit.react_stack_bottom_frame.bind(callLazyInit), thenableState = null, thenableIndexCounter = 0, currentDebugInfo = null, didWarnAboutMaps;
+    }, callLazyInitInDEV = callLazyInit["react-stack-bottom-frame"].bind(callLazyInit), thenableState = null, thenableIndexCounter = 0, currentDebugInfo = null, didWarnAboutMaps;
     var didWarnAboutGenerators = didWarnAboutMaps = !1;
     var ownerHasKeyUseWarning = {};
     var ownerHasFunctionTypeWarning = {};
@@ -15444,7 +15444,7 @@ module.exports = require("2b53550ce04dc092");
     };
     (function() {
         var isomorphicReactPackageVersion = React.version;
-        if ("19.1.1" !== isomorphicReactPackageVersion) throw Error('Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.1.1\nLearn more: https://react.dev/warnings/version-mismatch"));
+        if ("19.1.0" !== isomorphicReactPackageVersion) throw Error('Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.1.0\nLearn more: https://react.dev/warnings/version-mismatch"));
     })();
     "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error("React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://react.dev/link/react-polyfills");
     ReactDOMSharedInternals.findDOMNode = function(componentOrElement) {
@@ -15462,10 +15462,10 @@ module.exports = require("2b53550ce04dc092");
     if (!function() {
         var internals = {
             bundleType: 1,
-            version: "19.1.1",
+            version: "19.1.0",
             rendererPackageName: "react-dom",
             currentDispatcherRef: ReactSharedInternals,
-            reconcilerVersion: "19.1.1"
+            reconcilerVersion: "19.1.0"
         };
         internals.overrideHookState = overrideHookState;
         internals.overrideHookStateDeletePath = overrideHookStateDeletePath;
@@ -15519,15 +15519,15 @@ module.exports = require("2b53550ce04dc092");
         listenToAllSupportedEvents(container);
         return new ReactDOMHydrationRoot(initialChildren);
     };
-    exports.version = "19.1.1";
+    exports.version = "19.1.0";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"c31f9b99c1e288cf":"4OQ2m","c4c4bc2113e5c77f":"jMk1U","772d609564cfd8f6":"i4X7T"}],"4OQ2m":[function(require,module,exports,__globalThis) {
+},{"58b41f0d7931b7bf":"f8EP2","18f532e8b37a4078":"k2qSn","8723e987a5e3f325":"b3QVi"}],"f8EP2":[function(require,module,exports,__globalThis) {
 'use strict';
-module.exports = require("ef03b89c8fe2794e");
+module.exports = require("f6356e156bc4b3e5");
 
-},{"ef03b89c8fe2794e":"j5hep"}],"j5hep":[function(require,module,exports,__globalThis) {
+},{"f6356e156bc4b3e5":"z38ef"}],"z38ef":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * scheduler.development.js
@@ -15774,7 +15774,7 @@ module.exports = require("ef03b89c8fe2794e");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{}],"i4X7T":[function(require,module,exports,__globalThis) {
+},{}],"b3QVi":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -15788,9 +15788,9 @@ function checkDCE() {
     // a false positive.
     throw new Error('^_^');
 }
-module.exports = require("b0f0e6b9e8349dac");
+module.exports = require("2b843ec1d26c2467");
 
-},{"b0f0e6b9e8349dac":"cLd8p"}],"cLd8p":[function(require,module,exports,__globalThis) {
+},{"2b843ec1d26c2467":"2naYG"}],"2naYG":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * react-dom.development.js
@@ -15838,7 +15838,7 @@ module.exports = require("b0f0e6b9e8349dac");
         return dispatcher;
     }
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-    var React = require("6f0162e9ab224cd4"), Internals = {
+    var React = require("dc8ec98f2e17c169"), Internals = {
         d: {
             f: noop,
             r: function() {
@@ -15963,11 +15963,11 @@ module.exports = require("b0f0e6b9e8349dac");
     exports.useFormStatus = function() {
         return resolveDispatcher().useHostTransitionStatus();
     };
-    exports.version = "19.1.1";
+    exports.version = "19.1.0";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"dc8ec98f2e17c169":"k2qSn"}],"igp9b":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -15997,9 +15997,9 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"7h6Pi":[function(require,module,exports,__globalThis) {
+},{}],"a6zoM":[function(require,module,exports,__globalThis) {
 "use strict";
-var Refresh = require("7422ead32dcc1e6b");
+var Refresh = require("b40852340423e99a");
 function debounce(func, delay) {
     {
         let timeout = undefined;
@@ -16037,7 +16037,7 @@ module.exports.init = function() {
             };
         };
         if (typeof window !== 'undefined') {
-            let ErrorOverlay = require("e4d875b7642f9496");
+            let ErrorOverlay = require("b597458f4d08bbe6");
             ErrorOverlay.setEditorHandler(function(errorLocation) {
                 let file = `${errorLocation.fileName}:${errorLocation.lineNumber || 1}:${errorLocation.colNumber || 1}`;
                 fetch(module.bundle.devServer + `/__parcel_launch_editor?file=${encodeURIComponent(file)}`);
@@ -16160,11 +16160,11 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"hpiFP","e4d875b7642f9496":"gnoim"}],"hpiFP":[function(require,module,exports,__globalThis) {
+},{"b40852340423e99a":"2aAOB","b597458f4d08bbe6":"btKEv"}],"2aAOB":[function(require,module,exports,__globalThis) {
 'use strict';
-module.exports = require("96622d495519d4e");
+module.exports = require("71920173094a29ed");
 
-},{"96622d495519d4e":"7AD9f"}],"7AD9f":[function(require,module,exports,__globalThis) {
+},{"71920173094a29ed":"2LW0u"}],"2LW0u":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * react-refresh-runtime.development.js
@@ -16400,7 +16400,7 @@ module.exports = require("96622d495519d4e");
     exports.setSignature = setSignature;
 })();
 
-},{}],"gnoim":[function(require,module,exports,__globalThis) {
+},{}],"btKEv":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "setEditorHandler", ()=>$da9882e673ac146b$export$25a22ac46f1bd016);
@@ -18275,11 +18275,11 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"igp9b"}],"rVuNV":[function(require,module,exports,__globalThis) {
 'use strict';
-module.exports = require("ee51401569654d91");
+module.exports = require("8547da225c23801b");
 
-},{"ee51401569654d91":"gnlQf"}],"gnlQf":[function(require,module,exports,__globalThis) {
+},{"8547da225c23801b":"dkya9"}],"dkya9":[function(require,module,exports,__globalThis) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -18464,19 +18464,19 @@ module.exports = require("ee51401569654d91");
     function validateChildKeys(node) {
         "object" === typeof node && null !== node && node.$$typeof === REACT_ELEMENT_TYPE && node._store && (node._store.validated = 1);
     }
-    var React = require("58362d9d82be395f"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    var React = require("dadceb4399651175"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
     Symbol.for("react.provider");
     var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
         return null;
     };
     React = {
-        react_stack_bottom_frame: function(callStackForError) {
+        "react-stack-bottom-frame": function(callStackForError) {
             return callStackForError();
         }
     };
     var specialPropKeyWarningShown;
     var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
+    var unknownOwnerDebugStack = React["react-stack-bottom-frame"].bind(React, UnknownOwner)();
     var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
     var didWarnAboutKeySpread = {};
     exports.Fragment = REACT_FRAGMENT_TYPE;
@@ -18486,6 +18486,6 @@ module.exports = require("ee51401569654d91");
     };
 })();
 
-},{"58362d9d82be395f":"jMk1U"}]},["aj62f","4ZGjQ"], "4ZGjQ", "parcelRequire581d", {}, null, null, "http://localhost:1234")
+},{"dadceb4399651175":"k2qSn"}]},["e6FES","4ZGjQ"], "4ZGjQ", "parcelRequire581d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=counter.f72d0d54.js.map

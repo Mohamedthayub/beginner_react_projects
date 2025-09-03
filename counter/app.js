@@ -9,7 +9,7 @@ const Counter = () => {
                   <h1>{count}</h1>
             <div className="counter">
                 <button onClick={() => {
-                    setCount(count + 1)
+                    setCount(prev => prev + 1);
                 }}>Increase</button>
                 <button onClick={() => {
                     setCount(0)
@@ -19,7 +19,7 @@ const Counter = () => {
                     setCount(0);
                  }
                  else{
-                    setCount(count - 1);
+                    setCount(prev => prev - 1);
                  }
                 }}>Decrease</button>
             </div>
