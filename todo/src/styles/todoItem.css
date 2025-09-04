@@ -1,0 +1,24 @@
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.delete-btn{
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.line-through{
+    text-decoration: line-through solid #ADADAD 3px;
+}
