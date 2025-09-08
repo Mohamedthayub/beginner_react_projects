@@ -8,3 +8,14 @@
 body{
   font-family: "DM Sans", sans-serif;
 }
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+h1{
+  text-align: center;
+}
