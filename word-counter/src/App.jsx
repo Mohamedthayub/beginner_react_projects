@@ -13,7 +13,6 @@ const App = () => {
       <div className="input-container">
         <textarea cols={40} rows={10} onKeyUp={(e) =>  {
           setCharacter(e.target.value);
-          console.log(character);
           wordCount(e.target.value);
         }} >
         </textarea>

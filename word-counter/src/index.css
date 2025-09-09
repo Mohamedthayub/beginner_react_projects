@@ -15,7 +15,13 @@ body{
   align-items: center;
   height: 90vh;
 }
+textarea{
+  padding: 10px;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
 
 h1{
   text-align: center;
+  margin-bottom: 10px;
 }

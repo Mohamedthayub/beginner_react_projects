@@ -8,38 +8,4 @@
 body{
       font-family: "DM Sans", sans-serif;
 }
-.btn-container{
-    margin-top: 20px;
-}
-.time-container{
-    display: flex;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-h1{
-    font-size: 30px;
-    text-align: center;
-}
-button{
-    padding: 20px;
-    font-weight: 600;
-    border-radius: 5px;
-    margin-left: 20px;
-    font-size: 20px;
-    
-}
 
-#start{
-    background-color: green;
-}
-#stop{
-    background-color: red;
-}
-#reset{
-    background-color: yellow;
-}
