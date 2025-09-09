@@ -11,11 +11,15 @@ body{
 .btn-container{
     margin-top: 20px;
 }
+.time-container{
+    display: flex;
+}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 h1{
     font-size: 30px;
