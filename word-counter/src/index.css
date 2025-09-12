@@ -21,7 +21,8 @@ textarea{
   font-family: "DM Sans", sans-serif;
 }
 
-h1{
+.tittle{
   text-align: center;
+  font-size: 25px;
   margin-bottom: 10px;
 }
