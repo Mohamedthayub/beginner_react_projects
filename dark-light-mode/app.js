@@ -11,11 +11,13 @@ const DarkLight = () => {
   }, [mode]);
 
   return (
-    <div className="container">
-      <h1>{mode} Mode</h1>
-      <button onClick={() => setMode(mode === "Dark" ? "Light" : "Dark")}>
+    <div className="main">
+      <div className="container">
+        <h1>{mode} Mode</h1>
+        <button onClick={() => setMode(mode === "Dark" ? "Light" : "Dark")}>
         Change Mode
-      </button>
+        </button>
+      </div>
     </div>
   );
 };
