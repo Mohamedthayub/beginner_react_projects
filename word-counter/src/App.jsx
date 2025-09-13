@@ -1,23 +1,16 @@
 import { useState } from 'react'
 const App = () => {
-  const [character ,setCharacter] = useState("");
-  const [word,setWord] = useState([]);
-  function  wordCount (char){
-    let convertWord = char.split(" ");
-    let filteredWord = convertWord.filter((item) => item != "");
-    setWord(filteredWord);
-  }
-   return (
+  const [ text, setText] = useState("");
+  const  wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+  const characterCount = text.length;
+  return (
     <div className="app">
       <h1>Word Counter</h1>
       <div className="input-container">
-        <textarea cols={40} rows={10} onKeyUp={(e) =>  {
-          setCharacter(e.target.value);
-          wordCount(e.target.value);
-        }} >
-        </textarea>
-        <h1>Word Counts :{character.length} </h1>
-        <h1>Character Counts :{word.length} </h1>
+        <textarea cols={40} rows={10}  value={text} placeholder='Type something here..' onChange={(e) => setText(e.target.value)}>
+        </textarea> 
+        <h2>Character Count : {characterCount}</h2>
+        <h2>Word Count : {wordCount}</h2>
       </div>
     </div>
   )
